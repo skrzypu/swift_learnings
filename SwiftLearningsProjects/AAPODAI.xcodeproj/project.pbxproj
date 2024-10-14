@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B42323362CC64A500096D5FA /* machineLearning.py in Resources */ = {isa = PBXBuildFile; fileRef = B42323332CC64A500096D5FA /* machineLearning.py */; };
+		B42323372CC64A500096D5FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B42323352CC64A500096D5FA /* README.md */; };
+		B447CF562CD23F9400BE742F /* APODItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B447CF552CD23F9400BE742F /* APODItemView.swift */; };
+		B456D4322CB3D21400FF01EC /* AAPODAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4312CB3D21400FF01EC /* AAPODAIApp.swift */; };
+		B456D4342CB3D21400FF01EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4332CB3D21400FF01EC /* ContentView.swift */; };
+		B456D4362CB3D21900FF01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B456D4352CB3D21900FF01EC /* Assets.xcassets */; };
+		B456D4392CB3D21900FF01EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B456D4382CB3D21900FF01EC /* Preview Assets.xcassets */; };
+		B456D4412CB3F69D00FF01EC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B456D4402CB3F69D00FF01EC /* ComposableArchitecture */; };
+		B456D4452CB6706A00FF01EC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4442CB6706A00FF01EC /* SplashView.swift */; };
+		B456D4492CB6996B00FF01EC /* APODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4482CB6996B00FF01EC /* APODService.swift */; };
+		B456D44C2CBCF94500FF01EC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D44B2CBCF94500FF01EC /* HomeView.swift */; };
+		B456D44E2CBD071800FF01EC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D44D2CBD071800FF01EC /* DetailView.swift */; };
+		B456D4522CBD4E6B00FF01EC /* APODTagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4512CBD4E6B00FF01EC /* APODTagManager.swift */; };
+		B456D4552CBE7A2E00FF01EC /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4542CBE7A2E00FF01EC /* AnalyticsService.swift */; };
+		B456D4802CC14DE700FF01EC /* APODLLM.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B456D47F2CC14DE700FF01EC /* APODLLM.mlmodel */; };
+		B456D4822CC15D3E00FF01EC /* APODPredictionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4812CC15D3E00FF01EC /* APODPredictionManager.swift */; };
+		B456D4842CC277F100FF01EC /* ConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4832CC277F100FF01EC /* ConfigurationProtocol.swift */; };
+		B456D4872CC279EF00FF01EC /* ConfigurationImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D4862CC279EF00FF01EC /* ConfigurationImplementation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B42323332CC64A500096D5FA /* machineLearning.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = machineLearning.py; sourceTree = "<group>"; };
+		B42323352CC64A500096D5FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B423233A2CC666F90096D5FA /* GoogleScript */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoogleScript; sourceTree = "<group>"; };
+		B447CF552CD23F9400BE742F /* APODItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODItemView.swift; sourceTree = "<group>"; };
+		B456D42E2CB3D21400FF01EC /* AAPODAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAPODAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B456D4312CB3D21400FF01EC /* AAPODAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAPODAIApp.swift; sourceTree = "<group>"; };
+		B456D4332CB3D21400FF01EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B456D4352CB3D21900FF01EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B456D4382CB3D21900FF01EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B456D4442CB6706A00FF01EC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B456D4482CB6996B00FF01EC /* APODService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODService.swift; sourceTree = "<group>"; };
+		B456D44B2CBCF94500FF01EC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B456D44D2CBD071800FF01EC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B456D4512CBD4E6B00FF01EC /* APODTagManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODTagManager.swift; sourceTree = "<group>"; };
+		B456D4542CBE7A2E00FF01EC /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		B456D47F2CC14DE700FF01EC /* APODLLM.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = APODLLM.mlmodel; sourceTree = "<group>"; };
+		B456D4812CC15D3E00FF01EC /* APODPredictionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODPredictionManager.swift; sourceTree = "<group>"; };
+		B456D4832CC277F100FF01EC /* ConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationProtocol.swift; sourceTree = "<group>"; };
+		B456D4862CC279EF00FF01EC /* ConfigurationImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationImplementation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B456D42B2CB3D21400FF01EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B456D4412CB3F69D00FF01EC /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B42323342CC64A500096D5FA /* Machine Learning */ = {
+			isa = PBXGroup;
+			children = (
+				B42323332CC64A500096D5FA /* machineLearning.py */,
+			);
+			path = "Machine Learning";
+			sourceTree = "<group>";
+		};
+		B42323382CC64A6C0096D5FA /* APODPredictionManager */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4812CC15D3E00FF01EC /* APODPredictionManager.swift */,
+			);
+			path = APODPredictionManager;
+			sourceTree = "<group>";
+		};
+		B42323392CC666D30096D5FA /* GoogleSheet */ = {
+			isa = PBXGroup;
+			children = (
+				B423233A2CC666F90096D5FA /* GoogleScript */,
+			);
+			path = GoogleSheet;
+			sourceTree = "<group>";
+		};
+		B456D4252CB3D21400FF01EC = {
+			isa = PBXGroup;
+			children = (
+				B42323392CC666D30096D5FA /* GoogleSheet */,
+				B42323342CC64A500096D5FA /* Machine Learning */,
+				B42323352CC64A500096D5FA /* README.md */,
+				B456D4302CB3D21400FF01EC /* AAPODAI */,
+				B456D42F2CB3D21400FF01EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B456D42F2CB3D21400FF01EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B456D42E2CB3D21400FF01EC /* AAPODAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B456D4302CB3D21400FF01EC /* AAPODAI */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4852CC2792A00FF01EC /* DoNotPutInGit */,
+				B456D47E2CC14CF900FF01EC /* LLM */,
+				B456D4462CB6992F00FF01EC /* Services */,
+				B456D4422CB6704600FF01EC /* Features */,
+				B456D4312CB3D21400FF01EC /* AAPODAIApp.swift */,
+				B456D4332CB3D21400FF01EC /* ContentView.swift */,
+				B456D4352CB3D21900FF01EC /* Assets.xcassets */,
+				B456D4372CB3D21900FF01EC /* Preview Content */,
+			);
+			path = AAPODAI;
+			sourceTree = "<group>";
+		};
+		B456D4372CB3D21900FF01EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4382CB3D21900FF01EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B456D4422CB6704600FF01EC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B456D44F2CBD071D00FF01EC /* Detail */,
+				B456D44A2CBCF93600FF01EC /* Home */,
+				B456D4432CB6705000FF01EC /* Splash */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B456D4432CB6705000FF01EC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4442CB6706A00FF01EC /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B456D4462CB6992F00FF01EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B42323382CC64A6C0096D5FA /* APODPredictionManager */,
+				B456D4532CBE7A1400FF01EC /* AnalyticsService */,
+				B456D4502CBD4E5500FF01EC /* Managers */,
+				B456D4472CB6994A00FF01EC /* APODService */,
+				B456D4832CC277F100FF01EC /* ConfigurationProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B456D4472CB6994A00FF01EC /* APODService */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4482CB6996B00FF01EC /* APODService.swift */,
+			);
+			path = APODService;
+			sourceTree = "<group>";
+		};
+		B456D44A2CBCF93600FF01EC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B456D44B2CBCF94500FF01EC /* HomeView.swift */,
+				B447CF552CD23F9400BE742F /* APODItemView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B456D44F2CBD071D00FF01EC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B456D44D2CBD071800FF01EC /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B456D4502CBD4E5500FF01EC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4512CBD4E6B00FF01EC /* APODTagManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B456D4532CBE7A1400FF01EC /* AnalyticsService */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4542CBE7A2E00FF01EC /* AnalyticsService.swift */,
+			);
+			path = AnalyticsService;
+			sourceTree = "<group>";
+		};
+		B456D47E2CC14CF900FF01EC /* LLM */ = {
+			isa = PBXGroup;
+			children = (
+				B456D47F2CC14DE700FF01EC /* APODLLM.mlmodel */,
+			);
+			path = LLM;
+			sourceTree = "<group>";
+		};
+		B456D4852CC2792A00FF01EC /* DoNotPutInGit */ = {
+			isa = PBXGroup;
+			children = (
+				B456D4862CC279EF00FF01EC /* ConfigurationImplementation.swift */,
+			);
+			path = DoNotPutInGit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B456D42D2CB3D21400FF01EC /* AAPODAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B456D43C2CB3D21900FF01EC /* Build configuration list for PBXNativeTarget "AAPODAI" */;
+			buildPhases = (
+				B456D42A2CB3D21400FF01EC /* Sources */,
+				B456D42B2CB3D21400FF01EC /* Frameworks */,
+				B456D42C2CB3D21400FF01EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAPODAI;
+			packageProductDependencies = (
+				B456D4402CB3F69D00FF01EC /* ComposableArchitecture */,
+			);
+			productName = AAPODAI;
+			productReference = B456D42E2CB3D21400FF01EC /* AAPODAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B456D4262CB3D21400FF01EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B456D42D2CB3D21400FF01EC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = B456D4292CB3D21400FF01EC /* Build configuration list for PBXProject "AAPODAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B456D4252CB3D21400FF01EC;
+			packageReferences = (
+				B456D43F2CB3F69D00FF01EC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = B456D42F2CB3D21400FF01EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B456D42D2CB3D21400FF01EC /* AAPODAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B456D42C2CB3D21400FF01EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B456D4392CB3D21900FF01EC /* Preview Assets.xcassets in Resources */,
+				B456D4362CB3D21900FF01EC /* Assets.xcassets in Resources */,
+				B42323372CC64A500096D5FA /* README.md in Resources */,
+				B42323362CC64A500096D5FA /* machineLearning.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B456D42A2CB3D21400FF01EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B447CF562CD23F9400BE742F /* APODItemView.swift in Sources */,
+				B456D4342CB3D21400FF01EC /* ContentView.swift in Sources */,
+				B456D4842CC277F100FF01EC /* ConfigurationProtocol.swift in Sources */,
+				B456D4492CB6996B00FF01EC /* APODService.swift in Sources */,
+				B456D4552CBE7A2E00FF01EC /* AnalyticsService.swift in Sources */,
+				B456D44E2CBD071800FF01EC /* DetailView.swift in Sources */,
+				B456D4822CC15D3E00FF01EC /* APODPredictionManager.swift in Sources */,
+				B456D4872CC279EF00FF01EC /* ConfigurationImplementation.swift in Sources */,
+				B456D4322CB3D21400FF01EC /* AAPODAIApp.swift in Sources */,
+				B456D4522CBD4E6B00FF01EC /* APODTagManager.swift in Sources */,
+				B456D44C2CBCF94500FF01EC /* HomeView.swift in Sources */,
+				B456D4452CB6706A00FF01EC /* SplashView.swift in Sources */,
+				B456D4802CC14DE700FF01EC /* APODLLM.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B456D43A2CB3D21900FF01EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B456D43B2CB3D21900FF01EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B456D43D2CB3D21900FF01EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AAPODAI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsk.AAPODAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B456D43E2CB3D21900FF01EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AAPODAI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsk.AAPODAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B456D4292CB3D21400FF01EC /* Build configuration list for PBXProject "AAPODAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B456D43A2CB3D21900FF01EC /* Debug */,
+				B456D43B2CB3D21900FF01EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B456D43C2CB3D21900FF01EC /* Build configuration list for PBXNativeTarget "AAPODAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B456D43D2CB3D21900FF01EC /* Debug */,
+				B456D43E2CB3D21900FF01EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B456D43F2CB3F69D00FF01EC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B456D4402CB3F69D00FF01EC /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B456D43F2CB3F69D00FF01EC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B456D4262CB3D21400FF01EC /* Project object */;
+}

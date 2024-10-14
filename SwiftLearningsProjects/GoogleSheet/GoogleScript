@@ -1,0 +1,78 @@
+const SHEET_NAME = 'sheetName'; // Change if your sheet name is different
+const SECRET_TOKEN = 'SECRETToken'; // Replace with a strong, unique token
+
+function doPost(e) {
+  try {
+    Logger.log("Received POST request");
+    Logger.log("Payload: " + e.postData.contents);
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName(SHEET_NAME);
+
+    // Parse the incoming JSON data
+    const data = JSON.parse(e.postData.contents);
+
+    // Verify the secret token
+    if (data.token !== SECRET_TOKEN) {
+      throw new Error('Invalid token.');
+    }
+
+    // Extract data fields
+    const copyright = data.copyright || 'Unknown';
+    const tags = data.tags || 'Unknown';
+    const mediaType = data.mediaType || 'Unknown';
+    const opened = data.opened || 0;
+
+    // Append the data to the sheet
+    sheet.appendRow([copyright, tags, mediaType, opened]);
+    SpreadsheetApp.flush(); // Ensures data is written immediately
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'success' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': error.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function doGet(e) {
+  try {
+    Logger.log("Received GET request");
+    const token = e.parameter.token;
+    if (token !== SECRET_TOKEN) {
+      Logger.log("Invalid token in GET request");
+      throw new Error("Invalid token.");
+    }
+
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName(SHEET_NAME);
+    if (!sheet) {
+      throw new Error(`Sheet "${SHEET_NAME}" not found.`);
+    }
+
+    const data = sheet.getDataRange().getValues();
+    const headers = data[0];
+    const rows = data.slice(1);
+
+    // Convert rows to array of objects
+    const dataObjects = rows.map(row => {
+      let obj = {};
+      headers.forEach((header, index) => {
+        obj[header] = row[index];
+      });
+      return obj;
+    });
+
+    // Return JSON response
+    return ContentService
+      .createTextOutput(JSON.stringify(dataObjects))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    Logger.log("Error: " + error.message);
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': error.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
